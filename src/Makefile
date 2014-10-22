@@ -61,7 +61,7 @@ endif
 # Do not use variable length arrays because they don't work in Visual Studio 2013.
 WARNINGS = -Wall -Wtype-limits -Wvla
 
-INCLUDEDIRS = -I. -I./strategies -I./extras -I..
+INCLUDEDIRS = -I. -I./strategies -idirafter./extras -I..
 
 ifndef CC
   CC = gcc
